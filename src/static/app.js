@@ -71,13 +71,17 @@ document.addEventListener("DOMContentLoaded", () => {
         activityCard.appendChild(description);
 
         const schedule = document.createElement("p");
-        schedule.innerHTML = "<strong>Schedule:</strong> ";
-        schedule.appendChild(document.createTextNode(details.schedule));
+        const scheduleStrong = document.createElement("strong");
+        scheduleStrong.textContent = "Schedule:";
+        schedule.appendChild(scheduleStrong);
+        schedule.appendChild(document.createTextNode(" " + details.schedule));
         activityCard.appendChild(schedule);
 
         const availability = document.createElement("p");
-        availability.innerHTML = "<strong>Availability:</strong> ";
-        availability.appendChild(document.createTextNode(`${spotsLeft} spots left`));
+        const availabilityStrong = document.createElement("strong");
+        availabilityStrong.textContent = "Availability:";
+        availability.appendChild(availabilityStrong);
+        availability.appendChild(document.createTextNode(` ${spotsLeft} spots left`));
         activityCard.appendChild(availability);
 
         // Create participants section
@@ -86,7 +90,9 @@ document.addEventListener("DOMContentLoaded", () => {
           participantsSection.className = "participants-section";
 
           const participantsLabel = document.createElement("p");
-          participantsLabel.innerHTML = "<strong>Participants:</strong>";
+          const participantsStrong = document.createElement("strong");
+          participantsStrong.textContent = "Participants:";
+          participantsLabel.appendChild(participantsStrong);
           participantsSection.appendChild(participantsLabel);
 
           const participantsList = document.createElement("ul");
