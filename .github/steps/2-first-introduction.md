@@ -1,5 +1,7 @@
 ## Step 2: Getting work done with Copilot
 
+> Note: This exercise helps you accelerate-with-copilot by showing how to use Copilot effectively in small guided steps.
+
 In the previous step, GitHub Copilot was able to help us onboard to the project. That alone is a huge time saver, but now let's get some work done!
 
 :bug: **THERE IS A BUG ON THE WEBSITE** :bug:
